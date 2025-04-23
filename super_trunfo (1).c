@@ -3,29 +3,34 @@
 int main(){
     int População, Ponto turístico, opcao;
     char Código da carta, País, Cidade[50];
-    float Area em km2, PIB;   
+    float Area em km2, PIB, Densidade demográfica;   
 
     printf("Menu Principal \n");
     printf("1. Iniciar jogo \n");
     printf("2. Regras \n");
-    printf("Sair \n");
+    printf("3. Sair \n");
     printf("Escolha uma opção \n");
     scanf("%d", opcao);
 
     switch(opcao){
       case 1:
       printf("Iniciando jogo...\n");
+      printf("Escolha um atributo:\n");
+      printf("População\n");
+      printf("Ponto turístico\n");
+      printf(" Area em km2\n");
+      printf("PIB\n");
+      printf("Densidade demográfica\n");
       break;
       case 2:
       printf("Regras \n");
-      printf("Regra1. %s", Escolha uma carta e compare com a do adversário);
-      break
+      printf("Escolha um requisito e compare com o adversário.\n");
+      break;
       case 3: 
       printf("Saindo...\n");
       default:
       printf("Opção inválida");
-    }
-
+     }
 
 
     printf("País1: \n");
@@ -90,13 +95,14 @@ int main(){
 
     printf("País2: %s", Argentina);
     printf("Código da carta2: %s", A02);
-    printf("Cidade2: %s", Buenos Aires);
+    printf("Cidade2: %s", Buenos Aires");
     printf("População2: %d", 978.654,78);
     printf("Área em km22: %f", 176.953,67);
     printf("PIB2: %f", 623.176,31);
     printf("Pontos turísticos2: %d", 17);
     printf("Densidade demográfica2: %f", 659.354,00)
 
+ 
     if("População1 > População2");
     if("Área em km21 > Área em km22");
     if("PIB1 > PIB2");
@@ -109,5 +115,13 @@ int main(){
       printf("### Carta A02 venceu! ### \n");
 
     }
+ 
+ 
+ 
+    
+
+
+
+    
     return 0;
 }
